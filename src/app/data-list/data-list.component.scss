@@ -1,0 +1,41 @@
+.cont-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../assets/img/nubeakatsuki.png');
+    // background: linear-gradient(to right, #a52121, #fafafafa);
+  background-color: #a52121 ;
+  background-repeat: space;
+  height: 100vh;
+  overflow: scroll;
+}
+.tr {
+  font-family: 'NINJA';
+}
+.aldea1 {
+  font-family: 'NINJA';
+  background-color: rgb(20, 130, 152);
+}
+.aldea2 {
+  font-family: 'NINJA';
+  background-color: rgb(200, 152, 76);
+}
+.aldea3 {
+  font-family: 'NINJA';
+  background-color: rgb(61, 116, 59);
+}
+.aldea4 {
+  font-family: 'NINJA';
+  background-color: rgb(119, 133, 137);
+}
+.aldea5 {
+  font-family: 'NINJA';
+  background-color: rgb(26, 177, 228);
+}
+.aldea6 {
+  font-family: 'NINJA';
+  background-color: rgb(106, 69, 46);
+}
+.img-aldea {
+  max-width: 40px;
+}

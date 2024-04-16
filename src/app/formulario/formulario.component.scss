@@ -1,0 +1,43 @@
+.contain {
+  display:grid;
+  justify-content: center;
+    justify-content: center;
+    background: #a52121;
+    font-family: 'NINJA';
+    color: #fafafafa;
+    text-align: center;
+    padding: 15px;
+}
+.labelAldea{
+  display: flex;
+}
+.form-contain {
+  display: grid;
+  // text-align: center;
+}
+.containLabels {
+  display: grid;
+  justify-content: center;
+  margin: 5px;
+  // text-align: center;
+}
+.label {
+  border-radius: 10px;
+  background: #dfdede;
+  margin-left: 5px;
+}
+.submit {
+  margin: 10px;
+  background: #3e2626;
+  border-radius: 10px;
+  color: #fafafafa;
+}
+.img-aktsk {
+  max-width: 40px;
+}
+.img-kunai{
+  max-width: 35px;
+}
+.img-error{
+  max-width: 50px;
+}

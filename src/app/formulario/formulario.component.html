@@ -1,0 +1,61 @@
+<div class="contain">
+
+  <div>
+    <h1>Enter your information if you want to be one</h1>
+  </div>
+
+  <div class="containLabels">
+    <form [formGroup]="myForm" (ngSubmit)="submitForm()" class="form-contain">
+
+      <div>
+        <label for="username">Name </label>
+        <input type="text" formControlName="username" class="label"><img class="img-kunai" src="../../assets/img1/kunai.png" alt="Imagen" />
+        <div *ngIf="f.username.errors && (f.username.dirty || f.username.touched)">
+          <div *ngIf="f.username.errors.required">el Nombre es requerido</div>
+          <div *ngIf="f.username.errors.minlength">el Nombre debe contener al menos 5 caracteres <img class="img-error" src="../../assets/img1/error.png" alt="Imagen" /></div>
+        </div>
+      </div>
+
+      <div>
+        <label for="villaje">Villaje </label>
+        <input type="text" formControlName="villaje" class="label"><img class="img-kunai" src="../../assets/img1/kunai.png" alt="Imagen" />
+        <div *ngIf="f.villaje.errors && (f.villaje.dirty || f.villaje.touched)">
+          <div *ngIf="f.villaje.errors.required">se requiere Aldea </div>
+          <div *ngIf="f.villaje.errors.minlength">el Nombre debe contener al menos 5 caracteres <img class="img-error" src="../../assets/img1/error.png" alt="Imagen" /></div>
+        </div>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="text" formControlName="email" class="label"><img class="img-kunai" src="../../assets/img1/kunai.png" alt="Imagen" />
+        <div *ngIf="f.email.errors && (f.email.dirty || f.email.touched)">
+          <div *ngIf="f.email.errors.required">el Email es requerido</div>
+          <div *ngIf="f.email.errors.email">formato de Email invalido <img class="img-error" src="../../assets/img1/error.png" alt="Imagen" /></div>
+        </div>
+      </div>
+
+      <div>
+        <label for="password">Contraseña</label>
+        <input type="password" formControlName="password" class="label"><img class="img-kunai" src="../../assets/img1/kunai.png" alt="Imagen" />
+        <div *ngIf="f.password.errors && (f.password.dirty || f.password.touched)">
+          <div *ngIf="f.password.errors.required">la Contraseña es requerida</div>
+          <div *ngIf="f.password.errors.pattern">debes incluir al menos 8 caracteres, una mayúscula, una minúscula y un número <img class="img-error" src="../../assets/img1/error.png" alt="Imagen" /></div>
+        </div>
+      </div>
+
+      <div class="submit-content">
+      <button type="submit" class="submit">Siguiente <img class="img-aktsk" src="../../assets/img1/akatsuki.png"/></button>
+      </div>
+
+      <!-- <div *ngIf="showFormValues">
+        <h2>Valores del formulario:</h2>
+        <p>Nombre de usuario: {{ myForm.value.username }}</p>
+        <p>Email: {{ myForm.value.email }}</p>
+        <p>Contraseña: {{ myForm.value.password }}</p>
+      </div> -->
+
+    </form>
+
+  </div>
+
+</div>

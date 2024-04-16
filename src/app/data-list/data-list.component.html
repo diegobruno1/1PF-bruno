@@ -1,0 +1,24 @@
+<app-formulario [aldeas]="aldeas" ></app-formulario>
+<div class="cont-table">
+  <div class="table-responsive-lg">
+<table class="table table-dark">
+  <thead>
+    <tr class="tr">
+      <th scope="col">#</th>
+      <th scope="col">NAME</th>
+      <th scope="col">VILLAJE</th>
+      <th scope="col">SYMBOL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let persona of personas; let i = index"
+    [class]="obtenerClaseAldea(persona.aldea)">
+      <td class="align-middle text-center">{{ i + 1 }}</td>
+      <td class="align-middle text-center">{{ persona.nombre }}</td>
+      <td class="align-middle text-center">{{ persona.aldea }}</td>
+      <td><img class="img-aldea"[src]="persona.aldea | aldeaImagen" alt="Imagen de aldea"></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
